@@ -26,8 +26,8 @@ const Lesson = (props: LessonProps) => {
                 {availableDateFormatted}
             </span>
             
-            <div className={classNames("rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500", {
-                "bg-green-500": isActiveLesson,
+            <div className={classNames("rounded border border-gray-500 p-4 mt-2 group-hover:border-pink-200", {
+                "bg-pink-600": isActiveLesson,
             })}>
                 <header className="flex items-center justify-between">
                     {isLessonAvailable ? (
@@ -46,7 +46,7 @@ const Lesson = (props: LessonProps) => {
                     )}
                     <span className={classNames("font-bold text-xs text-white border rounded px-2 py-[0.125rem]", {
                         'border-white': isActiveLesson,
-                        'border-green-300': !isActiveLesson
+                        'border-pink-600': !isActiveLesson
                     })}>
                         {props.type === 'live' ? "AO VIVO" : "AULA PRÁTICA"}
                     </span>

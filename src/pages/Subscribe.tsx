@@ -2,6 +2,7 @@ import { gql, useMutation } from "@apollo/client"
 import { useState, FormEvent } from "react"
 import { useNavigate } from "react-router-dom"
 import { Logo } from "../components/svgs/Logo"
+import Rukia from "../components/svgs/Rukia"
 
 const CREATE_SUBSCRIBER_MUTANTION = gql`
     mutation CreateSubscriber ($name : String!, $email: String!) {
@@ -36,7 +37,7 @@ const Subscribe = () => {
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
             <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
                 <div className="max-w-[640px]">
-                    <Logo />
+                    <Rukia height="190" color="#fff" />
                     <h1 className="mt-8 text-[2.5rem] leading-tight">
                         Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong> JS
                     </h1>
@@ -60,7 +61,7 @@ const Subscribe = () => {
                             onChange={event => setSubsciber({ ...subscriber, email: event.target.value })}
                         />
                         <button
-                            className="mt-4 bg-green-500 uppercase py-4 rounded font-bold text-sm hover:bg-green-700 transition-colors disabled:opacity-50"
+                            className="mt-4 bg-pink-600 uppercase py-4 rounded font-bold text-sm hover:bg-pink-700 transition-colors disabled:opacity-50"
                             type="submit"
                             disabled={loading}
                         >
