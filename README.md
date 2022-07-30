@@ -1,8 +1,8 @@
 # Event Plataform
 
-![home](/app_gallery/home.png)
-
 ![home](/app_gallery/subscribe.png)
+
+![home](/app_gallery/home.png)
 
 ## Funcionalitties
 
